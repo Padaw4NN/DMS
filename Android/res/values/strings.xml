@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ceres</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tablayout_da_tela_principal">TabLayout da tela principal</string>
+    <string name="principal">Principal</string>
+    <string name="relat_rios">Relatórios</string>
+    <string name="dispositivos">Dispositivos</string>
+    <string name="userimg">userImg</string>
+    <string name="local_para_api_com_banco_do_usuario">Local para api com banco do usuario</string>
+    <string name="configuracoes_do_app">configuracoes do app</string>
+    <string name="infograficos_1">infograficos 1</string>
+    <string name="infograficos_2">infograficos 2</string>
+    <string name="infograficos_3">infograficos_3</string>
+    <string name="relatorios">Relatórios</string>
+    <string name="respons_veis">Responsáveis</string>
+    <string name="relatorio_dispositivo_1">relatorio dispositivo 1</string>
+    <string name="relatorio_dispositivo_2" />
+    <string name="dispositivo_1">Dispositivo 1</string>
+    <string name="dispositivo_2">Dispositivo 2</string>
+    <string name="relatorio_dispositivo_3" />
+    <string name="dispositivo_3">Dispositivo 3</string>
+    <string name="gerenciamento_dispositivo_2">gerenciamento dispositivo 2</string>
+    <string name="gerenciamento_dispositivo_3">gerenciamento dispositivo 3</string>
+    <string name="gerenciamento_dispositivo_1">gerenciamento dispositivo 1</string>
+    <string name="gerenciador_de_dispositivos">Gerenciador de Dispositivos:</string>
+</resources>

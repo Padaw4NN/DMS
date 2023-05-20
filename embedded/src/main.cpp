@@ -1,30 +1,48 @@
 #include <WiFi.h>
 #include <Arduino.h>
 #include <FirebaseESP32.h>
+#include <SoftwareSerial.h>
 
-#include "../lib/WifiConnection.h"
-#include "../lib/FirebaseConnection.h"
+#include "../include/NPKHandle.h"
+#include "../include/DHTHandle.h"
+#include "../include/WifiConnection.h"
+#include "../include/FirebaseConnection.h"
 
-String wifi_ssid = "<ssid>";
-String wifi_pswd = "<password>";
-String fb_key = "<api key>";
-String fb_url = "<firebase database url>";
+
+#define TEN_MINUTES ((1000 * 60) * 10)
+
+String wifi_ssid = "*****";
+String wifi_pswd = "*****";
+String fb_key = "********";
+String fb_url = "********";
 
 
 void setup()
 {
-  Serial.begin(9600);
+  Serial.begin(4800);
+  mod.begin(4800);
+
   wifiInit(wifi_ssid, wifi_pswd);
   firebaseInit(fb_key, fb_url);
+
+  pinMode(RE, OUTPUT);
+  pinMode(DE, OUTPUT);
 }
 
 void loop()
 {
-//generic data example
-  sendData("0.232");
-  sendData("0.221");
-  sendData("0.223");
-  sendData("0.212");
-  sendData("0.211");
-  sendData("0.202");
+  Serial.println("Response vector:");
+
+  for (std::size_t i{}; i < 10; ++i) {
+    readNitrogen();
+    readPhosporus();
+    readPotassium();
+  }
+
+  Serial.println("Send data to fireabase...");
+  delay(2000);
+  sendDataByJson(N_vec, P_vec, K_vec);
+
+  Serial.println("\n");
+  delay(1000);
 }

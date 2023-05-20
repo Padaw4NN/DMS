@@ -44,5 +44,5 @@ void loop()
   sendDataByJson(N_vec, P_vec, K_vec);
 
   Serial.println("\n");
-  delay(1000);
+  delay(TEN_MINUTES);
 }

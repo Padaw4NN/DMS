@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "632964600095",
+    "firebase_url": "https://ceres-project-pi-default-rtdb.firebaseio.com",
+    "project_id": "ceres-project-pi",
+    "storage_bucket": "ceres-project-pi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632964600095:android:f546b2781a919e0836202a",
+        "android_client_info": {
+          "package_name": "com.example.ceres"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "632964600095-1330lsmgoqs2l88ccghln09fe52r0ih4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzMRMFxYP9V_Rte6zT6BS7Ubptr5dk96U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "632964600095-1330lsmgoqs2l88ccghln09fe52r0ih4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

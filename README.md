@@ -10,7 +10,6 @@ This project helps to solve the soil used for planting through sensing, and data
 #### Team
 - Alexander Cardoso (Data Engineering - Embedded programmer)
 - João Brito (Front-end mobile developer)
-- João Farias (Article)
 - Jefferson Bittencourt (Full-stack mobile developer)
 - Leonardo Arero (Article - Project Management)
 - Vinicius Farias (Hardware assembly)
